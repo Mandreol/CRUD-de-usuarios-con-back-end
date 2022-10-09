@@ -1,0 +1,25 @@
+.form-container {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.692);
+}
+.form {
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: column;
+	gap: 0.5rem;
+	background-color: rgba(219, 218, 218);
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	box-shadow: 6px 8px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+form input {
+	width: -webkit-fill-available;
+}
