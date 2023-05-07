@@ -6,7 +6,7 @@ import UserCard from "./components/UserCard";
 import "./styles/button.css";
 import "./styles/userCard.css";
 
-const baseURL = "https://users-crud1.herokuapp.com";
+const baseURL = "https://users-crud-glqx.onrender.com";
 
 function App() {
 	const [users, setUsers] = useState();
@@ -14,7 +14,7 @@ function App() {
 	const [showForm, setShowForm] = useState(false);
 
 	const getAllUsers = () => {
-		const URL = `${baseURL}/users/`;
+		const URL = `${baseURL}/user/`;
 		axios.get(URL).then((res) => setUsers(res.data));
 	};
 
@@ -22,7 +22,7 @@ function App() {
 
 	//función para crearu nuevo usuario
 	const createNewUser = (data) => {
-		const URL = `${baseURL}/users/`;
+		const URL = `${baseURL}/user`;
 		axios
 			.post(URL, data)
 			.then((res) => {
@@ -33,7 +33,7 @@ function App() {
 	};
 	//Función para elminar un suario
 	const deleteCarById = (id) => {
-		const URL = `${baseURL}/users/${id}/`;
+		const URL = `${baseURL}/user/${id}/`;
 		axios
 			.delete(URL)
 			.then((res) => {
@@ -44,7 +44,7 @@ function App() {
 	};
 	//Función para editar un usuario específico
 	const editUserById = (id, data) => {
-		const URL = `${baseURL}/users/${id}/`;
+		const URL = `${baseURL}/user/${id}/`;
 		axios
 			.patch(URL, data)
 			.then((res) => {
