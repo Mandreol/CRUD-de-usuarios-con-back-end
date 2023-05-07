@@ -4,7 +4,7 @@ import { FaTrashAlt, FaEdit, FaGift } from "react-icons/fa";
 const UserCard = ({ user, deleteCarById, setUpDateInfo, setShowForm }) => {
 	return (
 		<div className="card">
-			<h1>{`${user.first_name} ${user.last_name}`}</h1>
+			<h1>{`${user.firs_name} ${user.last_name}`}</h1>
 			<h3>{user.email}</h3>
 			<h3>
 				<FaGift /> {user.birthday}
