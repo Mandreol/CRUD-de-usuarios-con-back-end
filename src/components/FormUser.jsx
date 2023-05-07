@@ -5,7 +5,7 @@ import "../styles/form.css";
 
 const defaultValue = {
 	mail: "",
-	first_name: "",
+	firs_name: "",
 	last_name: "",
 	email: "",
 	birthday: "",
@@ -54,7 +54,7 @@ const FormUser = ({
 						</div>
 						<div>
 							<label htmlFor="first_name">First name</label>
-							<input id="first_name" type="text" {...register("first_name")} />
+							<input id="first_name" type="text" {...register("firs_name")} />
 						</div>
 						<div>
 							<label htmlFor="last_name">Last name</label>
